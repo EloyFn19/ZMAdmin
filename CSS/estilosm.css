@@ -165,12 +165,9 @@ header>* {
 
 .nav-header {
     display: inline-block;
-
-    float: right;
-
+    /* float: right; */
     margin-top: 5%;
     margin-bottom: 5%;
-
     letter-spacing: 1px;
     word-spacing: 4px;
     min-width: 500px;
@@ -191,7 +188,7 @@ header>* {
     font-size: 120%;
     letter-spacing: 1px;
     word-spacing: 4 px;
-    transition: border-bottom: 0.2s;
+    transition: border-bottom 0.2s;
 
 }
 
@@ -741,6 +738,7 @@ footer p {
         font-size: 90%;
         padding: 1% 3% 1% 3%;
     }
+}
 
     /* telefonos pequeños a tablet pequeñas 481px a 767px */
 
