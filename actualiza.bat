@@ -9,9 +9,7 @@ SET DELAY_MESSAGE_COMMIT="Iniciando 'git commit' en %PAUSE_DURATION% segundos. P
 SET DELAY_MESSAGE_PUSH="Iniciando 'git push' en %PAUSE_DURATION% segundos. Presiona cualquier tecla para cancelar."
 
 echo.
-echo ========================================
-echo  Script de Actualizacion de Mobiliio en GitHub
-echo ========================================
+echo  Script de Actualizacion de Mobilio en GitHub
 echo.
 
 :: === PASO 1: Confirmacion inicial ===
@@ -22,9 +20,9 @@ if /i "%confirmation%" neq "s" (
 )
 
 echo.
-echo ========================================
-echo  PASO: git add .
-echo ========================================
+
+echo  Compilando...
+
 echo.
 
 :: === Pausa y cancelacion para ADD ===
@@ -48,9 +46,9 @@ echo.
 
 :: === PASO: git commit ===
 echo.
-echo ========================================
-echo  PASO: git commit
-echo ========================================
+
+echo  Haciendo commit...
+
 echo.
 
 :: Pedir mensaje de commit al usuario
@@ -78,9 +76,9 @@ echo.
 
 :: === PASO: git push ===
 echo.
-echo ========================================
-echo  PASO: git push
-echo ========================================
+
+echo  Haciendo push...
+
 echo.
 
 :: === Pausa y cancelacion para PUSH ===
@@ -103,9 +101,9 @@ if %errorlevel% neq 0 (
 echo 'git push' completado.
 echo.
 
-echo ========================================
+
 echo  PROCESO DE ACTUALIZACION FINALIZADO.
-echo ========================================
+
 echo.
 
 endlocal
