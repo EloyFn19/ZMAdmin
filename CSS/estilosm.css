@@ -112,7 +112,7 @@ h3 {
 
 header {
     position: relative;
-    background-image: url(../MobilioImg/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     /* background-color: rgba(50, 50, 50, 0.8); */
     z-index: 1;
     background-size: cover;
@@ -356,7 +356,7 @@ header>* {
 /* Section Plans */
 
 .section-plans {
-    background-image: url(../MobilioImg/fondoheader.jpg);
+    background-image: url(../img/fondoheader.jpg);
 }
 
 .section-description {
