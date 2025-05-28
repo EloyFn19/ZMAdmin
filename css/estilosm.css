@@ -650,13 +650,13 @@ footer {
     color: #F77737;
 }
 
-.fa-x {
+.fa-whatsapp {
     -webkit-transition: color 0.2s;
     transition: color 0.2s
 }
 
-.fa-x:hover {
-    color: #00aced;
+.fa-whatsapp:hover {
+    color: #25D366;
 }
 
 .fa-google {
