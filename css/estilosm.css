@@ -208,131 +208,24 @@ header>* {
     box-sizing: content-box;
 }
 
-.btn {
-    display: inline-block;
-    background-color: whitesmoke;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    border: 2px solid rgb(83, 171, 206);
-    color: #191919;
-    font-size: 18px;
-    font-weight: 800;
-    border-color: #CC5500;
-    padding: 2% 5% 2% 5%;
-    margin-bottom: 3%;
-}
-
-.btn:hover {
-    display: inline-block;
-    background-color: #009D71;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    border: 2px solid rgb(83, 171, 206);
-    color: #191919;
-    font-size: 18px;
-    border-color: #3F448C;
-    padding: 2% 5% 2% 5%;
-    font-weight: 800;
-}
-
-.btn-more:hover {
-    background-color: rgb(83, 171, 206);
-    color: black;
-}
-
-.btn-contact {
-    color: #191919;
-    background-color: whitesmoke;
-    /* border-color: #3F448C; */
-    border-color: #CC5500;
-}
-
-.btn-contact:hover {
-    background-color: #009D71;
-    color: #191919;
-    /* border-color: #CC5500; */
-    border-color: #3F448C;
-}
-
-
-.btn-about-us {
-    color: #191919;
-    background-color: whitesmoke;
-    /* border-color: #3F448C; */
-    border-color: #CC5500;
-}
-
-.btn-about-us:hover {
-    background-color: #009D71;
-    color: #191919;
-    /* border-color: #CC5500; */
-    border-color: #3F448C;
-}
-
-.btn-galeria {
-    color: #191919;
-    background-color: whitesmoke;
-    /* border-color: #3F448C; */
-    border-color: #CC5500;
-
-}
-
-.btn-galeria:hover {
-    background-color: #009D71;
-    color: #191919;
-    /* border-color: #CC5500; */
-    border-color: #3F448C;
-
-}
-
-.btn-contact-ingresa {
-    color: black;
-    border: 2px solid rgb(18, 119, 40);
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.btn-contact-ingresa:hover {
-    background-color: rgb(18, 119, 40);
-    color: white;
-}
-
-.btn-formulario {
-    display: inline-block;
-    background-color: whitesmoke;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    border: 2px solid rgb(83, 171, 206);
-    color: #191919;
-    font-size: 18px;
-    font-weight: 800;
-    border-color: #CC5500;
-    padding: 2% 5% 2% 5%;
-    text-rendering: optimizeLegibility;
-
-    font-optical-sizing: Medium;
-
+.btn-form {
+    text-align: center;
 }
 
 .btn-formulario:hover {
-    display: inline-block;
-    background-color: #009D71;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    border: 2px solid rgb(83, 171, 206);
-    color: #191919;
-    font-size: 18px;
-    border-color: #3F448C;
-    padding: 2% 5% 2% 5%;
-    font-weight: 800;
-    text-rendering: optimizeLegibility;
-
-    font-optical-sizing: Medium;
-
+    /* background-color: #f0f0f0; */
+    /* Resalta el fondo al pasar el mouse */
+    /* color: #007bff; */
+    list-style-position: inside;
+    text-shadow:
+        -0.5px -0.5px 5px white,
+        /* Arriba izquierda */
+        0.5px -0.5px 5px white,
+        /* Arriba derecha */
+        -0.5px 0.5px 5px white,
+        /* Abajo izquierda */
+        0.5px 0.5px 5px white;
+    /* Abajo derecha */
 }
 
 .label {
@@ -369,10 +262,8 @@ header>* {
 .plan-content {
     background-color: rgba(139, 150, 182, 0.7);
     border-radius: 5px;
-
     margin-left: 5%;
     text-align: center;
-
     list-style-position: none;
     list-style: disc;
 }
@@ -432,12 +323,12 @@ header>* {
     /* Asegura que esté por encima de otros elementos */
     min-width: 150px;
     /* Asegura un ancho mínimo para la lista */
-     
+
 }
 
 .container:hover ul {
     /* Hide the list by default */
-    display: block ;
+    display: block;
     /* list-style-position:inside ; */
     /* background-color: rgba(139, 150, 182, 0.3); */
     border-radius: 5px;
@@ -449,7 +340,7 @@ header>* {
     /* padding-top: 10px; */
     transition: max-height 3s ease-out, opacity 3s ease-out, padding-top 3s ease-out;
     position: relative;
-    
+
 }
 
 .container {
@@ -489,14 +380,17 @@ header>* {
     padding: 8px 5px;
     /* Añade padding al área clickeable */
     /* white-space: nowrap; */
-      /* Propiedades para permitir el salto de línea en pantallas pequeñas */
-        white-space: normal; /* Permite que el texto salte de línea */
-        overflow: visible;   /* Permite que el contenido se desborde si no cabe (aunque con normal se ajustará) */
-        text-overflow: clip; /* No añade puntos suspensivos, el texto simplemente salta de línea */
-        
-        /* Opcional: Para casos de palabras muy largas sin espacios (como URLs),
+    /* Propiedades para permitir el salto de línea en pantallas pequeñas */
+    white-space: normal;
+    /* Permite que el texto salte de línea */
+    overflow: visible;
+    /* Permite que el contenido se desborde si no cabe (aunque con normal se ajustará) */
+    text-overflow: clip;
+    /* No añade puntos suspensivos, el texto simplemente salta de línea */
+
+    /* Opcional: Para casos de palabras muy largas sin espacios (como URLs),
            puedes forzar un salto de línea dentro de la palabra */
-        word-break: break-word; 
+    word-break: break-word;
 
 }
 
@@ -505,7 +399,7 @@ header>* {
     /* Resalta el fondo al pasar el mouse */
     /* color: #007bff; */
     list-style-position: inside;
-     text-shadow:
+    text-shadow:
         -0.5px -0.5px 5px white,
         /* Arriba izquierda */
         0.5px -0.5px 5px white,
@@ -740,67 +634,114 @@ footer p {
     }
 }
 
-    /* telefonos pequeños a tablet pequeñas 481px a 767px */
+/* telefonos pequeños a tablet pequeñas 481px a 767px */
 
-    @media only screen and (max-width:767px) {
-        body {
-            font-size: 16px;
-        }
+@media only screen and (max-width:767px) {
+    body {
+        font-size: 16px;
+    }
 
-        section {
-            padding: 1% 1% 1% 1%;
-
-        }
-
-
-
-        .col {
-            width: 100%;
-            margin: 0 0 4% 0;
-        }
-
-        h1 {
-            font-size: 300%;
-        }
-
-        h2 {
-            font-size: 150%;
-        }
-
-        .text-center {
-            font-size: 120%;
-            margin-bottom: 2%;
-            /* margin: 1%; */
-        }
-
-        .btn-contact-ingresa,
-        .btn-contact-ingresa:hover {
-            width: min-content
-        }
+    section {
+        padding: 1% 1% 1% 1%;
 
     }
 
 
-    /* telefonos pequeños de 0 a 480px */
 
-    @media only screen and (max-width:480px) {
-
-        section {
-            padding: 1% 1% 1% 1%;
-
-        }
-
-        .contact-form {
-            width: 100%;
-
-        }
-
-        .header {
-            height: 80%;
-        }
-
-        .btn-contact-ingresa,
-        .btn-contact-ingresa:hover {
-            width: min-content;
-        }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
     }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .text-center {
+        font-size: 120%;
+        margin-bottom: 2%;
+        /* margin: 1%; */
+    }
+
+    .btn-contact-ingresa,
+    .btn-contact-ingresa:hover {
+        width: min-content
+    }
+
+}
+
+
+/* telefonos pequeños de 0 a 480px */
+
+@media only screen and (max-width:480px) {
+
+    section {
+        padding: 1% 1% 1% 1%;
+
+    }
+
+    .contact-form {
+        width: 100%;
+
+    }
+
+    .header {
+        height: 80%;
+    }
+
+    .btn-contact-ingresa,
+    .btn-contact-ingresa:hover {
+        width: min-content;
+    }
+}
+
+
+/* nuevos */
+
+.btn-sombra {
+    background-color: rgba(139, 150, 182, 0.7);
+    border-radius: 25px;
+    /* margin-left: 5%; */
+    text-align: center;
+    list-style-position: none;
+    list-style: disc;
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+    color: #333;
+    /* Establece el color del texto del enlace */
+    display: inline-block;
+    /* Hace que todo el área del li sea clickeable */
+    padding: 2% 4%;
+    /* Añade padding al área clickeable */
+    white-space: normal;
+    /* Permite que el texto salte de línea */
+    overflow: visible;
+    /* Permite que el contenido se desborde si no cabe (aunque con normal se ajustará) */
+    text-overflow: clip;
+    /* No añade puntos suspensivos, el texto simplemente salta de línea */
+
+    /* Opcional: Para casos de palabras muy largas sin espacios (como URLs),
+           puedes forzar un salto de línea dentro de la palabra */
+    word-break: break-word;
+
+}
+
+.btn-sombra:hover {
+    /* background-color: #f0f0f0; */
+    /* Resalta el fondo al pasar el mouse */
+    /* color: #007bff; */
+    list-style-position: inside;
+    text-shadow:
+        -0.5px -0.5px 5px white,
+        /* Arriba izquierda */
+        0.5px -0.5px 5px white,
+        /* Arriba derecha */
+        -0.5px 0.5px 5px white,
+        /* Abajo izquierda */
+        0.5px 0.5px 5px white;
+    /* Abajo derecha */
+}

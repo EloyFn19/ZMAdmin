@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/estilosm.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/fuentes.css">
-    <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/all.css"> 
+    <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
 
 <body class="roboto">
     <header>
@@ -23,16 +25,15 @@
         </nav>
         <div class="home-container">
             <h1 class="h1">Mobilio.Shop.Mx</h1>
-            <a href="#producto" class="btn btn-about-us">Productos</a>
-            <a href="#galeria" class="btn btn-galeria">Galería</a>
-            <a href="#contacto" class="btn btn-contact">Contacto</a>
+            <a href="#producto" class="btn-sombra">Productos</a>
+            <a href="#galeria" class="btn-sombra">Galería</a>
+            <a href="#contacto" class="btn-sombra">Contacto</a>
         </div>
     </header>
     <section>
         <div class="row">
             <h2>Tu Oficina, el lugar donde las ideas toman forma</h2>
-            <p class="text-center">En <strong>Mobilio Shop MX</strong>, creemos que una oficina no es solo un conjunto
-                de
+            <p class="text-center">En **Mobilio Shop MX**, creemos que una oficina no es solo un conjunto de
                 escritorios y
                 sillas. Es el lienzo donde tus ideas cobran vida, el motor de tu creatividad y el epicentro de tus
                 logros.</p>
@@ -43,8 +44,8 @@
 
                 Imagina un escritorio que se adapta a tu ritmo, una silla que cuida tu postura hora tras hora, o
                 soluciones de almacenamiento que transforman el caos en armonía.</p>
-            <p class="text-center">En <strong>Mobilio Shop MX</strong>, cada pieza es una invitación a la productividad,
-                una declaración
+            <p class="text-center">En **Mobilio Shop MX**, cada pieza es una invitación a la productividad, una
+                declaración
                 de estilo y una inversión en tu bienestar y el de tu equipo.
                 Porque sabemos que tu oficina es más que un lugar de trabajo: es el reflejo de tu visión.
             </p>
@@ -52,7 +53,6 @@
         </div>
     </section>
 
-    <!-- Section plans -->
     <section class="section-plans">
         <div class="row">
             <h2 id="producto">Nuestros Productos</h2>
@@ -191,20 +191,22 @@
     </section>
     <section class="section-form">
         <div class="row">
-            <h2 id="contacto">Dejanos tus comentarios</h2>
-            <form action="#" method="POST" class="contact-form">
+            <h2 id="contacto">Déjanos tus comentarios</h2>
+            <form id="contactForm"
+                action="https://api.salesup.com/v4/integraciones/P25AP1096C5B1-81F8-4D5F-B1E4-AD7C67174265"
+                method="POST" class="contact-form">
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="name" class="label">Nombre</label>
+                        <label for="nombre" class="label">Nombre</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="name">Correo</label>
+                        <label for="correo">Correo</label>
                     </div>
                     <div class="col span-2-of-3">
                         <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo" required>
@@ -213,7 +215,16 @@
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="name">¿Deseas recibir notificaciones?</label>
+                        <label for="movil">Teléfono</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="telmov" name="movil" id="movil" placeholder="Ingresa tu teléfono" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">¿Deseas recibir notificaciones?</label>
                     </div>
                     <div class="col span-2-of-3">
                         <input type="checkbox" name="news" id="news" checked>¡Sí me interesa!
@@ -222,27 +233,32 @@
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="name" class="label">Comentario</label>
+                        <label for="comentarios" class="label">Comentarios</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <textarea name="message" id="message" placeholder="Deja tu comentario"></textarea>
+                        <textarea name="comentarios" id="comentarios" placeholder="Deja tus comentarios"></textarea>
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name" class="label"></label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Enviar" class="btn-formulario">
-                    </div>
+
+
+                <div class="btn-form" text-align="center">
+                    <input type="submit" class="btn-sombra" value="Enviar" id="submit-button">
                 </div>
+                <!-- UTM  -->
+                <input type="hidden" name="utm_source" id="utm_source_input">
+                <input type="hidden" name="utm_medium" id="utm_medium_input">
+                <input type="hidden" name="utm_campaign" id="utm_campaign_input">
+                <input type="hidden" name="utm_term" id="utm_term_input">
+                <input type="hidden" name="utm_content" id="utm_content_input">
+                <input type="hidden" name="Refiere" id="referrer_input">
 
             </form>
+            <div id="form-status" style="margin-top: 20px; text-align: center; padding: 10px; border-radius: 4px;">
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <section class="section-img-footer">
         <div class="row">
             <h2>Creando la mejor web</h2>
@@ -259,10 +275,12 @@
             </div>
             <div class="col span-1-of-2">
                 <ul class="social-links">
-                    <li><a href="https://www.facebook.com/profile.php?id=61576142115676" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/mobilio.shopmx/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61576142115676" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/mobilio.shopmx/" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
                     <li><a href="https://wa.me/5545576003" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="mailto:floryou902@gmail.com" ><i class="fab fa-google"></i></a></li>
+                    <li><a href="mailto:floryou902@gmail.com"><i class="fab fa-google"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -271,6 +289,95 @@
             <p>Creado por EloyFn-DevVerse</p>
         </div>
     </footer>
+
+    <!-- Script de respuesta de formulario sin actualizar página -->
+
+    <script>
+    // Función para obtener un parámetro de la URL
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    // Rellenar campos ocultos de UTM y Referer al cargar la página
+    document.addEventListener('DOMContentLoaded', function() {
+        // Asigna los valores de los parámetros UTM de la URL a los campos ocultos
+        document.getElementById('utm_source_input').value = getUrlParameter('utm_source');
+        document.getElementById('utm_medium_input').value = getUrlParameter('utm_medium');
+        document.getElementById('utm_campaign_input').value = getUrlParameter('utm_campaign');
+        // SalesUp no listó 'utm_term', pero es buena práctica mantenerlo si lo usas en tus URLs
+        document.getElementById('utm_term_input').value = getUrlParameter('utm_term');
+        document.getElementById('utm_content_input').value = getUrlParameter('utm_content');
+
+        // Captura la URL de referencia del navegador y la asigna al campo "Refiere"
+        // document.referrer contiene la URL de la página que te trajo a la actual.
+        document.getElementById('referrer_input').value = document.referrer;
+    });
+
+
+    // Obtener el formulario y el div de estado
+    const form = document.getElementById('contactForm');
+    const formStatus = document.getElementById('form-status');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Detener el envío normal del formulario
+
+        formStatus.className = '';
+        formStatus.textContent = 'Enviando información...';
+
+        // Recolectar todos los datos del formulario, incluyendo los campos ocultos de UTM y Refiere
+        const formData = new FormData(form);
+        const data = {};
+        for (let [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+
+        // Envía la petición a SalesUp
+        fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // O 'application/x-www-form-urlencoded' si SalesUp lo requiere
+            },
+            body: JSON.stringify(data), // Envía todos los datos recolectados, incluyendo UTMs y Refiere
+        })
+        .then(response => {
+            if (response.ok) {
+                // Si la API devuelve JSON, parsea la respuesta. Si no, usa response.text()
+                return response.json();
+            }
+            // Si la respuesta no fue exitosa, intenta leer el error para mostrarlo
+            return response.json().then(errorData => {
+                throw new Error(errorData.message || 'Error desconocido al enviar el formulario.');
+            });
+        })
+        .then(responseData => {
+            console.log('Formulario enviado con éxito. Respuesta de la API:', responseData);
+            formStatus.className = 'success';
+            formStatus.textContent = '¡Gracias! Tu información ha sido enviada con éxito.';
+            form.reset(); // Limpiar el formulario
+
+            // Limpiar los campos UTM y Refiere ocultos después del envío
+            document.getElementById('utm_source_input').value = '';
+            document.getElementById('utm_medium_input').value = '';
+            document.getElementById('utm_campaign_input').value = '';
+            document.getElementById('utm_term_input').value = '';
+            document.getElementById('utm_content_input').value = '';
+            document.getElementById('referrer_input').value = ''; // Limpiar campo "Refiere"
+        })
+        .catch(error => {
+            console.error('Error al enviar el formulario:', error);
+            formStatus.className = 'error';
+            formStatus.textContent = 'Hubo un problema al enviar tu información. Por favor, inténtalo de nuevo.';
+        });
+    });
+</script>
+
+               <!-- SalesUpUTMs -->
+                        <script type="text/javascript">
+                        (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://assets.upnify.com/scripts/tracking.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();</script>
+                <!-- End SalesUpUTMs -->
 
 </body>
 
