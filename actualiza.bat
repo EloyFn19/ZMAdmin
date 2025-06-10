@@ -2,7 +2,7 @@
 setlocal
 
 :: Configuración
-SET DEFAULT_COMMIT_MESSAGE="Actualizacion de Mobiliio"
+SET DEFAULT_COMMIT_MESSAGE="Actualizacion de ZM Admin"
 SET PAUSE_DURATION=5
 SET DELAY_MESSAGE_ADD="Iniciando 'git add .' en %PAUSE_DURATION% segundos. Presiona cualquier tecla para cancelar."
 SET DELAY_MESSAGE_COMMIT="Iniciando 'git commit' en %PAUSE_DURATION% segundos. Presiona cualquier tecla para cancelar."

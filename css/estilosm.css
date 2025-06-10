@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #1E3A5F;
 }
 
 .clearfix {
@@ -47,7 +48,7 @@ html {
 section {
 
     padding: 20px 0;
-    background-color: rgb(88, 112, 120);
+    background-color: #D9D9D9;
 
 }
 
@@ -56,7 +57,7 @@ section {
 
 h1 {
     margin-bottom: 4%;
-    color: #3F448C;
+    color: #1E3A5F;
     word-spacing: 4px;
     letter-spacing: 1px;
     text-align: center;
@@ -80,7 +81,8 @@ h1 {
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: #1E3A5F;
     font-size: 180%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -92,7 +94,7 @@ h2 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: whitesmoke;
+    background-color: #88C057;
     content: "";
     width: 100px;
     margin: 0 auto;
@@ -103,6 +105,16 @@ h3 {
     font-size: 130%;
     width: auto;
 }
+h3:hover{
+    text-shadow:
+        -0.5px -0.5px 5px white,
+        /* Arriba izquierda */
+        0.5px -0.5px 5px white,
+        /* Arriba derecha */
+        -0.5px 0.5px 5px white,
+        /* Abajo izquierda */
+        0.5px 0.5px 5px white;
+}
 
 /* Nav */
 
@@ -112,7 +124,7 @@ h3 {
 
 header {
     position: relative;
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/buildings-5477084_1920.jpg);
     /* background-color: rgba(50, 50, 50, 0.8); */
     z-index: 1;
     background-size: cover;
@@ -145,7 +157,7 @@ header>* {
 
 .logo {
     height: 200px;
-    border: 5px solid black;
+    border: 5px solid #88C057;
     /* border-width: 10px; */
     width: auto;
     /* float: top; */
@@ -230,6 +242,7 @@ header>* {
 
 .label {
     border-radius: 50%;
+    color: #1E3A5F;
 
 }
 
@@ -239,7 +252,7 @@ header>* {
     width: 100%;
     padding: 0 5% 0 5%;
     /* color: #191919; */
-    color: rgb(255, 255, 255);
+    color: #1E3A5F;
     text-align: center;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -260,7 +273,8 @@ header>* {
 }
 
 .plan-content {
-    background-color: rgba(139, 150, 182, 0.7);
+     background-color: rgba(74, 144, 226, 0.5);
+
     border-radius: 5px;
     margin-left: 5%;
     text-align: center;
@@ -477,8 +491,8 @@ header>* {
 /* Img footer */
 
 .section-img-footer {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Img/Fondo.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Img/Fondo.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Img/buildings-5477084_1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Img/buildings-5477084_1920.jpg);
     background-size: cover;
     color: whitesmoke;
     background-attachment: fixed;
@@ -500,6 +514,7 @@ footer {
 .social-links {
     list-style: none;
     float: right;
+    color: #D9D9D9;
 }
 
 
@@ -510,7 +525,7 @@ footer {
     margin-right: 20px;
     text-decoration: none;
     border: 0;
-    color: whitesmoke;
+    color: #D9D9D9;
     -webkit-transition: color 0.2s;
     transition: 0.2s;
 
@@ -518,7 +533,7 @@ footer {
 
 .footer-nav li a:active,
 .footer-nav li a:hover {
-    color: whitesmoke;
+    color: #88C057;
 }
 
 .social-links li a:link,
@@ -703,7 +718,7 @@ footer p {
 /* nuevos */
 
 .btn-sombra {
-    background-color: rgba(139, 150, 182, 0.7);
+    background-color:rgba(74, 144, 226, 0.9);
     border-radius: 25px;
     /* margin-left: 5%; */
     text-align: center;
@@ -745,3 +760,4 @@ footer p {
         0.5px 0.5px 5px white;
     /* Abajo derecha */
 }
+
