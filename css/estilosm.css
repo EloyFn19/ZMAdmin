@@ -25,6 +25,13 @@
     margin: 0 auto;
 }
 
+.row-us {
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 85%;
+}
+
 html {
     /* background-color: rgb(37, 34, 34); */
     /* color: rgb(0, 0, 0); */
@@ -56,7 +63,7 @@ section {
 /* Encabezados */
 
 h1 {
-    margin-bottom: 4%;
+    margin-bottom: 3%;
     color: #1E3A5F;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -76,7 +83,7 @@ h1 {
 
     font-optical-sizing: Medium;
     /* font-weight: 800; */
-    font-size: 70px;
+    font-size: 90px;
     /* font-style: italic; */
 }
 
@@ -210,7 +217,7 @@ header>* {
 
 .home-container {
     display: inline-block;
-    margin-bottom: 1%;
+    margin-bottom: 1.5%;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -258,6 +265,23 @@ header>* {
     text-rendering: optimizeLegibility;
     font-weight: 500;
 }
+
+/* Video */
+
+.video-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.section-us {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Separa los elementos */
+}
+
 
 /* Section Plans */
 
@@ -718,8 +742,8 @@ footer p {
 /* nuevos */
 
 .btn-sombra {
-    background-color:rgba(74, 144, 226, 0.9);
-    border-radius: 25px;
+    background-color: rgba(136, 192, 87, 0.75);
+    border-radius: 50px;
     /* margin-left: 5%; */
     text-align: center;
     list-style-position: none;
@@ -730,7 +754,7 @@ footer p {
     /* Establece el color del texto del enlace */
     display: inline-block;
     /* Hace que todo el área del li sea clickeable */
-    padding: 2% 4%;
+    padding: 1% 2%;
     /* Añade padding al área clickeable */
     white-space: normal;
     /* Permite que el texto salte de línea */
