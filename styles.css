@@ -2,7 +2,7 @@
    CONFIGURACIÓN GENERAL Y PALETA DE COLORES
    ========================================================================== */
 :root {
-  --primary: #1e7d4d;        /* Verde principal profesional */
+  --primary: #89D62F; /*#1e7d4d;        /* Verde principal profesional */
   --primary-hover: #165b38;  /* Verde oscuro para interacción */
   --light-green: #eef7f2;    /* Verde suave para fondos destacados */
   --dark-text: #2c3e50;      /* Gris oscuro para lectura cómoda */
