@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZM Administraciones | Sitio en mantenimiento. Regresamos muy pronto.">
+  <title>ZM Administraciones | Sitio en Mantenimiento</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="assets/logo-favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo-favicon.png">
+
+  <!-- Fuentes e Iconos (Font Awesome + Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Estilos actuales -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Estilos específicos para centrar la tarjeta de mantenimiento */
+    .maintenance-wrapper {
+      min-height: calc(100vh - 160px); /* Ajusta según el header y footer */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, var(--light-green) 0%, var(--white) 100%);
+    }
+
+    .maintenance-card {
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      border-top: 5px solid var(--primary);
+      border-radius: 12px;
+      padding: 50px 40px;
+      max-width: 650px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .maintenance-icon {
+      font-size: 3.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .maintenance-card h1 {
+      font-size: 2.2rem;
+      color: var(--dark-text);
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .maintenance-card p {
+      color: #555;
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    .contact-box {
+      background-color: var(--gray-light);
+      border-radius: 8px;
+      padding: 25px;
+      margin-top: 25px;
+    }
+
+    .contact-box h3 {
+      font-size: 1.1rem;
+      color: var(--dark-text);
+      margin-bottom: 15px;
+    }
+
+    .contact-box .social-links {
+      justify-content: center;
+    }
+
+    .direct-phone {
+      margin-top: 15px;
+      font-weight: 500;
+      color: var(--dark-text);
+    }
+
+    .direct-phone a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .direct-phone a:hover {
+      color: var(--primary-hover);
+    }
+
+    @media (max-width: 768px) {
+      .maintenance-card {
+        padding: 30px 20px;
+      }
+      .maintenance-card h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegación con tu Logo -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo-link">
+        <img src="img/logogde.jpg" alt="ZM Administraciones Logo" class="logo-img">
+      </a>
+    </div>
+  </header>
+
+  <!-- Sección de Mantenimiento -->
+  <main class="maintenance-wrapper">
+    <div class="maintenance-card">
+      <div class="maintenance-icon">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+      </div>
+      <h1>Estamos actualizando nuestro sitio web</h1>
+      <p>
+        En <strong>ZM Administraciones</strong> estamos realizando mejoras para ofrecerte una mejor experiencia y darte la atención transparente que tu condominio merece.
+      </p>
+
+      <!-- Canales de Atención Directa -->
+      <div class="contact-box">
+        <h3>¿Necesitas comunicarte con nosotros?</h3>
+        <p class="direct-phone">
+          Atención telefónica y WhatsApp: <br>
+          <a href="https://wa.me/5531976834" target="_blank">+52 (55) 3197 6834</a>
+        </p>
+
+        <ul class="social-links" style="margin-top: 20px;">
+          <li><a href="https://wa.me/5531976834" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="mailto:condominal.zm@gmail.com" aria-label="Correo de Google"><i class="fab fa-google"></i></a></li>
+          <li><a href="https://www.facebook.com/zmadministraciones" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 ZM Administraciones. Todos los derechos reservados.</p>
+      <p class="footer-tagline">Transparencia y Seguridad para tu Hogar</p>
+    </div>
+  </footer>
+
+</body>
+</html>
